@@ -1,6 +1,62 @@
 ---
-import MainLayout from "../layouts/mainLayout.astro"
+import MainLayout from "../layouts/mainLayout.astro";
+import homeHeroBackground from "../images/home-hero-bg.jpg";
+import referentieHeroHome from "../images/referentie-hero-home.png";
 ---
 <MainLayout title="Test pagina">
-<p class="p-4">Test inhoud</p>
+<!-- Hero sectie -->
+<section style={`background-image: url('${homeHeroBackground.src}')`} class="bg-no-repeat bg-cover bg-top content-end -mt-32 px-4">
+    <div class="flex mx-auto max-w-screen-xl gap-8 pt-44">
+        <div class="w-1/2 mt-6">
+            <span class="uppercase text-sky-400 font-medium	">Voor starters en kmo's</span>
+            <h1 class="uppercase font-bold text-4xl">Betaalbare, converterende websites & webshops</h1>
+            <p class="my-4">Een website zonder torenhoge opstartkosten en wurgcontracten. Wij specialiseren in websites voor startende ondernemers en KMO's die belang hechten aan een professionele online uitstraling.</p>
+            <a href="/" class="bg-sky-950 rounded-full text-white uppercase font-medium px-5 py-2 mt-4 mr-6 inline-block">Start nu</a> <a href="/" class="uppercase font-medium">Over ons</a>
+        </div>
+        <div class="w-1/2">
+            <img src={referentieHeroHome.src} alt="">
+        </div>
+    </div>
+    <div class="bg-gradient-to-b from-transparent to-white min-h-80"></div>
+</section>
+<!-- Einde hero sectie -->
+
+<!--Wat doen we -->
+<section class="-mt-56 px-4">
+    <div class="mx-auto max-w-xl text-center">
+        <span class="uppercase text-sky-400 font-medium block">Wat doen we</span>
+        <span class="uppercase font-bold text-3xl block">Maak je nooit meer zorgen over je website</span>
+        <p class="mt-4">NewFront bouwt websites voor de startende ondernemer en kleine tot middelgrote ondernemingen (KMO’s). Onze websites zijn 100% hand gecodeerd en ontworpen, daardoor garanderen we de snelste laadtijden. Dit zorgt niet alleen voor een frustratieloze ervaring voor jouw bezoekers, maar ook voor betere resultaten binnen Google. We streven naar een lange termijn relatie met elke klant en geloven in flexibele contracten die maandelijks opzegbaar zijn.</p>
+    </div>
+</section>
+<!--Einde wat doen we -->
+
+<!-- USP's -->
+ <section class="my-24 px-4">
+    <div class="grid grid-cols-3 mx-auto max-w-screen-xl justify-between gap-4 items-stretch">
+        <div class="bg-sky-50 rounded-xl p-6 grid content-between">
+            <div>
+                <h3 class="font-bold text-xl uppercase mb-4">Snelle laadtijden</h3>
+                <p class="mb-4">Als je website meer dan 3 seconden nodig heeft om te laden kan je tot 50% van je bezoekers verliezen. Onze websites laden in 1 seconde of minder, zodat iedereen vanop elk toestel een vlotte ervaring kan ervaren.</p>
+            </div>
+            <a href="/" class="underline font-semibold">Meer over website laadtijden</a>
+        </div>
+        <div class="bg-sky-50 rounded-xl p-6 grid content-between">
+            <div>
+                <h3 class="font-bold text-xl uppercase mb-4">Mobiel vriendelijk</h3>
+                <p class="mb-4">Je website zal passen op alle mobiele toestellen, tablets en desktop schermen zodat bezoekers je site kunnen bekijken ongeacht het toestel dat ze gebruiken.</p>
+            </div>
+            <a href="/" class="underline font-semibold">Start nu</a>
+        </div>
+        <div class="bg-sky-50 rounded-xl p-6 grid content-between">
+            <div>
+                <h3 class="font-bold text-xl uppercase mb-4">Belgisch werk</h3>
+                <p class="mb-4">We huren geen goedkope werkkrachten vanuit het buitenland en werken enkel samen met partners die dezelfde filosofie hanteren en zich volledig richten op kwaliteit.</p>
+            </div>
+            <a href="/" class="underline font-semibold">Meer over ons</a>
+        </div>
+    </div>
+ </section>
+<!-- Einde USP's -->
+
 </MainLayout>
