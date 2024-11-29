@@ -1,17 +1,31 @@
 ---
 import MainLayout from "../layouts/mainLayout.astro";
 import homeHeroBackground from "../images/home-hero-bg.jpg";
+import uspBackground from "../images/usp-achtergrond.svg";
 import referentieHeroHome from "../images/referentie-hero-home.png";
+import nickNewfront from "../images/nick-newfront.jpg";
+import checkIcoon from "../images/icons/check-icoon.svg";
+
+import headzLogo from "../images/referrals/headz-logo.svg";
+import pregoLogo from "../images/referrals/prego-logo.svg";
+import lividumLogo from "../images/referrals/lividum-logo.svg";
+import powerzoneLogo from "../images/referrals/powerzone-logo.svg";
+import picobelloLogo from "../images/referrals/picobello-logo.svg";
+import kfctongerloLogo from "../images/referrals/kfctongerlo-logo.svg";
+import kuisploegLogo from "../images/referrals/kuisploeg-logo.svg";
+import deboLogo from "../images/referrals/debotechnics-logo.svg";
+import lavieenyoLogo from "../images/referrals/lavieenyo-logo.svg";
+
 ---
-<MainLayout title="Test pagina">
+<MainLayout title="Betaalbare websites met flexibele contracten - NewFront">
 <!-- Hero sectie -->
 <section style={`background-image: url('${homeHeroBackground.src}')`} class="bg-no-repeat bg-cover bg-top content-end -mt-32 px-4">
     <div class="flex mx-auto max-w-screen-xl gap-8 pt-44">
         <div class="w-1/2 mt-6">
-            <span class="uppercase text-sky-400 font-medium	">Voor starters en kmo's</span>
-            <h1 class="uppercase font-bold text-4xl">Betaalbare, converterende websites & webshops</h1>
+            <span class="uppercase text-sky-400 font-bold">Voor starters en kmo's</span>
+            <h1 class="uppercase font-black	 text-4xl">Betaalbare, converterende websites & webshops</h1>
             <p class="my-4">Een website zonder torenhoge opstartkosten en wurgcontracten. Wij specialiseren in websites voor startende ondernemers en KMO's die belang hechten aan een professionele online uitstraling.</p>
-            <a href="/" class="bg-sky-950 rounded-full text-white uppercase font-medium px-5 py-2 mt-4 mr-6 inline-block">Start nu</a> <a href="/" class="uppercase font-medium">Over ons</a>
+            <a href="/" class="bg-sky-950 rounded-full text-white uppercase font-bold px-5 py-2 mt-4 mr-6 inline-block">Start nu</a> <a href="/" class="uppercase font-bold">Over ons</a>
         </div>
         <div class="w-1/2">
             <img src={referentieHeroHome.src} alt="">
@@ -24,39 +38,270 @@ import referentieHeroHome from "../images/referentie-hero-home.png";
 <!--Wat doen we -->
 <section class="-mt-56 px-4">
     <div class="mx-auto max-w-xl text-center">
-        <span class="uppercase text-sky-400 font-medium block">Wat doen we</span>
-        <span class="uppercase font-bold text-3xl block">Maak je nooit meer zorgen over je website</span>
-        <p class="mt-4">NewFront bouwt websites voor de startende ondernemer en kleine tot middelgrote ondernemingen (KMO’s). Onze websites zijn 100% hand gecodeerd en ontworpen, daardoor garanderen we de snelste laadtijden. Dit zorgt niet alleen voor een frustratieloze ervaring voor jouw bezoekers, maar ook voor betere resultaten binnen Google. We streven naar een lange termijn relatie met elke klant en geloven in flexibele contracten die maandelijks opzegbaar zijn.</p>
+        <span class="uppercase text-sky-400 font-bold block">Wat doen we</span>
+        <h2 class="uppercase font-black text-3xl block">Maak je nooit meer zorgen over je website</h2>
+        <p class="mt-4">NewFront bouwt websites voor de startende ondernemer en kleine tot middelgrote ondernemingen (KMO’s). Onze websites zijn 100% hand gecodeerd en ontworpen, daardoor garanderen we de snelste laadtijden. Dit zorgt niet alleen voor een frustratieloze ervaring voor jouw bezoekers, maar ook voor betere resultaten binnen Google. We streven naar een lange termijn relatie met elke klant en werken met flexibele contracten.</p>
     </div>
 </section>
 <!--Einde wat doen we -->
 
 <!-- USP's -->
- <section class="my-24 px-4">
+ <section style={`background-image: url('${uspBackground.src}')`} class="py-24 my-12 px-4">
     <div class="grid grid-cols-3 mx-auto max-w-screen-xl justify-between gap-4 items-stretch">
-        <div class="bg-sky-50 rounded-xl p-6 grid content-between">
+        <div class="bg-sky-50 rounded-xl px-6 py-8 grid content-between relative">
+            <div class="absolute -top-6 left-6 bg-sky-950 p-3 rounded-md"><svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2" class="fill-white w-8" viewBox="0 0 57 46"><path d="M24.044 32.723c1.138 1.138 2.608 1.695 4.41 1.671 1.803-.023 3.13-.675 3.984-1.956L48.373 8.536 24.471 24.471c-1.281.854-1.956 2.158-2.028 3.912-.071 1.755.463 3.201 1.601 4.34M28.454 0c2.799 0 5.49.391 8.074 1.174a26.193 26.193 0 0 1 7.292 3.521L38.414 8.11a21.728 21.728 0 0 0-9.96-2.419c-6.307 0-11.678 2.217-16.112 6.651-4.434 4.434-6.651 9.805-6.651 16.112 0 1.992.273 3.96.818 5.905a23.3 23.3 0 0 0 2.312 5.477h39.267a20.758 20.758 0 0 0 2.383-5.619 24.28 24.28 0 0 0 .747-6.047c0-1.707-.201-3.367-.605-4.98a20.635 20.635 0 0 0-1.814-4.695l3.415-5.406a31.549 31.549 0 0 1 3.379 7.114 26.265 26.265 0 0 1 1.316 7.825c.047 2.703-.261 5.287-.925 7.754a29.472 29.472 0 0 1-2.916 7.042 5.396 5.396 0 0 1-2.134 1.992 6.033 6.033 0 0 1-2.846.711H8.821a6.033 6.033 0 0 1-2.846-.711 5.396 5.396 0 0 1-2.134-1.992 29.032 29.032 0 0 1-2.845-6.793C.332 33.636 0 31.11 0 28.454c0-3.936.747-7.623 2.241-11.061 1.494-3.438 3.533-6.45 6.118-9.034 2.584-2.585 5.607-4.624 9.069-6.118C20.89.747 24.566 0 28.454 0" style="fill:#fff;fill-rule:nonzero"/></svg></div>
             <div>
-                <h3 class="font-bold text-xl uppercase mb-4">Snelle laadtijden</h3>
+                <h3 class="font-extrabold text-xl uppercase my-4">Snelle laadtijden</h3>
                 <p class="mb-4">Als je website meer dan 3 seconden nodig heeft om te laden kan je tot 50% van je bezoekers verliezen. Onze websites laden in 1 seconde of minder, zodat iedereen vanop elk toestel een vlotte ervaring kan ervaren.</p>
             </div>
             <a href="/" class="underline font-semibold">Meer over website laadtijden</a>
         </div>
-        <div class="bg-sky-50 rounded-xl p-6 grid content-between">
+        <div class="bg-sky-50 rounded-xl px-6 py-8 grid content-between relative">
+            <div class="absolute -top-6 left-6 bg-sky-950 p-3 rounded-md"><svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2" class="fill-white w-8" viewBox="0 0 54 44"><path d="M0 43.101V35.02h5.388V5.388c0-1.482.527-2.75 1.582-3.805C8.025.528 9.294 0 10.775 0h40.408v5.388H10.775V35.02h16.163v8.081H0Zm35.02 0c-.763 0-1.403-.258-1.92-.774-.516-.516-.774-1.156-.774-1.919V13.469c0-.763.258-1.403.774-1.919.517-.517 1.157-.775 1.92-.775h16.163c.763 0 1.403.258 1.919.775.517.516.775 1.156.775 1.919v26.939c0 .763-.258 1.403-.775 1.919-.516.516-1.156.774-1.919.774H35.02Zm2.694-8.081h10.775V16.163H37.714V35.02Zm0 0h10.775-10.775Z" style="fill-rule:nonzero" /></svg></div>
             <div>
-                <h3 class="font-bold text-xl uppercase mb-4">Mobiel vriendelijk</h3>
+                <h3 class="font-extrabold text-xl uppercase my-4">Mobiel vriendelijk</h3>
                 <p class="mb-4">Je website zal passen op alle mobiele toestellen, tablets en desktop schermen zodat bezoekers je site kunnen bekijken ongeacht het toestel dat ze gebruiken.</p>
             </div>
             <a href="/" class="underline font-semibold">Start nu</a>
         </div>
-        <div class="bg-sky-50 rounded-xl p-6 grid content-between">
+        <div class="bg-sky-50 rounded-xl px-6 py-8 grid content-between relative">
+            <div class="absolute -top-6 left-6 bg-sky-950 p-3 rounded-md"><svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2" class="fill-white w-8" viewBox="0 0 56 46"><path d="m9.095 3.336-.001-.001.173-.19-.172.191Zm.691-.125-.34-.084.341.083-.001.001ZM4.599 18.202l-.227-.352-.419.159-.407-.248-.133-.558-.808-.95-.017-.401-.652-.075-.133-.192-.481.219-.28-.815-.236-.034.183-.353-.049-.754-.032-.349-.236-.144.601-.634-.357-.982-.482-.281L0 9.473l3.184-1.782 4.49-3.12L9.229 3.9l-.204-.487.07-.077.225.28.205-.131-.252.318.145-.12.023.252.1-.284.142.094-.097-.156.242.062-.104-.35-.11.071.172-.161.018.004.073.447 2.036-.611.23.787-.364.44.247.3-.129.09.202.534.68.688 1.426-.027-.168-.949.321.072.357-.249.285.182.131-.44 1.508.693 1.186.291.261.179-.064.937.971.076.418-.274-.006.522.589-.453.113.179.327-.094.819-.665.667.028 1.54-1.157.997-1.344.002.002-.302-.487 1.714-.073.112.433.588.076.697-.206-.685-1.3.182-.472-.267-.129 1.369-.724.94-.095.135.21-.249.544.078.601.576-.215.928.224.42-.085-.026-.418.375-.171.859-1.099.461-.013.822.444.065.521-.309.278.106.563.235-.018-.162.131-.883-.347-.023.391 1.345.125.309-.19.463.548 1.207-1.177.047-.541.318-.398.241.315.477.029.379.906-.471.89.87 1.053.039.756.406.123.54-.251.582.385-.212.85.166.15-.001.001 1.417-.037.144-.281 1.033.276.99-.878.441.116.273.402.321.302.058.976 1.307.554.094.292 1.543.032.169.735.676-.369.438.546-.655.608.323.459-.522.15.063.69-.378-.028-.226.654.261.245-.143.581-.654.813.111.169.327-.11.091.222-.498.933-.335-.025-.306.669-.486.217.064 1.006.561.35.079.003.115.669-.265.552.822-.055.414-.502.226.318.361.28.526-.194.072.231.511-.338.1.317.359.102.642-.268.279.212.574-.039.312.25-.029.583.088-.216 1.027.136.96 1.617-.204.189.215.243-.098.134.298-.15 1.025.148-.366.849-.263-.025-.711.74.033.347.255.117-.109.234.28.129.261.58.638-.224 1.16.374-.147.6.453.178.064.417-.509 1.273.953 1.011-.043.289-.606.183-.018.232-.418-.421-.362.085-.393 1.164-.935.223-.263.439-.297.052-.137.324.346.858-.646.164-.188.488.303.263-.208.277-.388-.135.182-.292-.17-.392-.464-.11-.022.338-.272.067-.431-.241-.095-.438-.839.231-.082.929-.92.44-.139.766-.478.422.219.276-.141.402-.588.365.252.713-.437.394-.446.056-.188.996-.396.385.704.456-.138.259-.28-.113.076.346-.196.079.164.138-.257.248.2 1.009.49-.096.602 1.073-.057.551.553-.071.297.372-.297.723.656.283-.066.592-.275.047-.178.598-.378.277.056.194.261-.013.002.304-.425.462-.354.171-.824-.369-.193.507-1.39-.278-.493.506-.062.473-.28-.342-.512-.162-.217.293-.811.175-.184.244-.323-.456.245-.202-.018-.269-.341-.287.188-.335-.245-.06-.13-.569-1.163-.776-.147.31-.359.128-.111-.407.365-.545-.802-.857-.135-.094-.344.254-.541-.231-.567.053-.059-.498-.504.051-.48-1.101-.433.026-.811-.462-.183-.397-.386-.033-.575.321-1.121-.134.336-.591-.4-1.053.197-.007.397-.95-.591-.866-.815-.222-.02-.237.048-.307.365-.264.022-.704.31-.278-.304-.604.26-.049.188-.773.302.306-.063-.713.413-.381-.281-.365-.596-.029-.127-.319-.921.715-.182.559-.82.598-.196.415.282.346-.224.567.126.673-1.367.197-.819.392-.24.417-1.31.198-.002.003-1.183-.256-.603-.36-1.649.294-.042-.316-.718-.192.29-.485-.375-.414.346-.644.479-.027.534-.446-.476-.811.04-.62-.675-.012.017.158-.38-.162.384-.665-.062-1.121.319-.074.698-.825-.183-.435-.442-.074-.225-.312-.181.321.251.376-.427.007-.3-1.026-.301-.235-.285.068-.749-1.086-.543.369-.194-.122-.075.153-.012-.162-.947.485-.751-.567-.346-.011-.171.201-.097-.239-.87.07-.199.178-.06.678-.3-.165.127.313-.14.036-.499-.667-.221-.788.24-.753-.217-1.207-.752-.892-.366.125-.211-.225-.984.3-.066-.259.33-.564-.637-.218-.396.605-.149-.088-.881.435-.211-.29-1.01-.461-.182-.324.001-1.282-.573-1.424.376-.418-.179-.291.113-.283-.978-.507.089-.246-.312-.489.613-.233-.001-.004-.613.232-.393-.772-.355.082-.201-.171-.41.495-.338-.181-.377.251-.207-.098.152-.16h-.002l-.151.159-.609.505-.54.153.092.3-.523.869-.684-.317Zm.101-.132ZM24.923 3.665l.003.002-.003-.002Zm20.464 12.314-.462-.032-.001.001.463.031Zm-.036 1.051.458.244.07.009.199-.184.183.136.02.064h.553l.522.749.573-.071.314.164.404-.578-.404.578-.314-.164-.573.07-.522-.749h-.553l-.02-.063-.183-.137-.199.184-.07-.009-.458-.243ZM34.772 1.138l-.223.106.011.393-.329-.143.054-.248.139.148.122-.18-.117-.079.343.003Z" style="fill:#fff"/></svg></div>
             <div>
-                <h3 class="font-bold text-xl uppercase mb-4">Belgisch werk</h3>
-                <p class="mb-4">We huren geen goedkope werkkrachten vanuit het buitenland en werken enkel samen met partners die dezelfde filosofie hanteren en zich volledig richten op kwaliteit.</p>
+                <h3 class="font-extrabold text-xl uppercase my-4">Belgische kwaliteit</h3>
+                <p class="mb-4">We huren geen goedkope werkkrachten vanuit het buitenland en werken enkel samen met partners die ook passie hebben voor hun vak.</p>
             </div>
             <a href="/" class="underline font-semibold">Meer over ons</a>
         </div>
     </div>
  </section>
 <!-- Einde USP's -->
+
+<!-- Aanbod -->
+<section class="my-12 px-4">
+    <div class="grid grid-flow-col grid-cols-5 justify-items-stretch mx-auto max-w-screen-lg gap-12">
+        <div class="col-span-2"><img src={nickNewfront.src} alt="" class="rounded-lg"></div>
+        <div class="col-span-3">
+            <span class="uppercase text-sky-400 font-bold block">Wat bieden we aan</span>
+            <h2 class="uppercase font-black text-3xl block">Websites zonder opstartkosten vanaf €95 per maand</h2>
+            <p class="my-4">We bieden € 0 opstartkosten aan voor een 5-pagina bedrijfswebsite. Als je meer nodig hebt als dat gaan we voor een offerte op maat, gebaseerd op het gewenste werk, aantal extra pagina's en de ingeschatte tijd die we nodig hebben. 12 maanden minimum contract. De prijzen zijn inclusief design, ontwikkeling, webruimte, onbeperkt aantal inhoudelijke wijzigingen, email, .be domeinnaam registratie voor een jaar, 24/7 ondersteuning en levenslange updates.</p>
+            <div class="grid grid-cols-2 gap-8 pt-4">
+                <div class="">
+                    <img src={checkIcoon.src} alt="" class="fill-sky-950 w-5 inline"><h4 class="inline font-bold uppercase ml-2 text-lg">100% veilig</h4>
+                    <p>Onze websites worden omgezet naar statische HTML en CSS, dit betekend dat er letterlijk niets gehackt kan worden.</p>
+                </div>
+                <div class="">
+                    <img src={checkIcoon.src} alt="" class="fill-sky-950 w-5 inline"><h4 class="inline font-bold uppercase ml-2 text-lg">design op maat</h4>
+                    <p>Geen gebruik van voorgekauwde templates, elke website volgt de branding van jouw bedrijf.</p>
+                </div>
+                <div class="">
+                    <img src={checkIcoon.src} alt="" class="fill-sky-950 w-5 inline"><h4 class="inline font-bold uppercase ml-2 text-lg">Ondersteuning</h4>
+                    <p>Ons werk stopt niet na kantooruren, we zijn steeds bereikbaar voor dringende vragen.</p>
+                </div>
+                <div class="">
+                    <img src={checkIcoon.src} alt="" class="fill-sky-950 w-5 inline"><h4 class="inline font-bold uppercase ml-2 text-lg">Zoekmachines</h4>
+                    <p>Geen valse beloftes, we leggen duidelijk uit was SEO is, hoe het werkt, en hoe je betere resultaten haalt in Google.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Einde aanbod -->
+
+<!-- Prijzen -->
+<section class="bg-slate-50 mt-24 py-24 px-4">
+    <div class="mx-auto max-w-screen-xl mb-6">
+        <span class="uppercase text-sky-400 font-bold block">Website prijzen</span>
+        <h2 class="uppercase font-black text-3xl block">Prijs opties voor elk budget</h2>
+    </div>
+    <div class="mx-auto max-w-screen-xl grid grid-cols-3 gap-12 pt-4">
+        <!-- Start eenmalig -->
+        <div class="bg-white rounded-xl p-12">
+            <span class="uppercase text-xl font-extrabold">éénmalig</span>
+            <ul role="list" class="space-y-1 text-sm/6 py-6">
+                <li class="flex justify-between">
+                    Design en ontwikkeling
+                    <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                    </svg>
+                </li>
+                <li class="flex justify-between">
+                    € 100 per extra pagina
+                    <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                    </svg>
+                </li>
+                <li class="flex justify-between">
+                    € 250 voor blog module
+                    <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                    </svg>
+                </li>
+                <li class="flex justify-between">
+                    + € 15 / maand webruimte
+                    <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                    </svg>
+                </li>
+                <li class="flex justify-between">
+                    Email accounts tot 5GB
+                    <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                    </svg>
+                </li>
+                <li class="flex justify-between">
+                    24/7 ondersteuning
+                    <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                    </svg>
+                </li>
+                <li class="flex justify-between">
+                    Levenslange updates
+                    <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                    </svg>
+                </li>
+              </ul>
+              <span class="uppercase text-xl font-extrabold block">€ 2300</span>
+              <span class="text-sm text-slate-500 font-semibold block">+ € 15 / maand webruimte</span>
+              <a href="/" class="bg-sky-950 rounded-full text-white uppercase font-bold px-5 py-2 mt-6 mr-6 inline-block">Start nu</a>
+        </div>
+        <!-- Start maandelijks -->
+        <div class="rounded-xl p-12 text-white bg-sky-950">
+            <span class="uppercase text-xl font-bold">Maandelijks</span>
+            <ul role="list" class="space-y-1 text-sm/6 py-6">
+                <li class="flex justify-between">
+                    Design en ontwikkeling
+                    <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                    </svg>
+                </li>
+                <li class="flex justify-between">
+                    € 100 per extra pagina
+                    <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                    </svg>
+                </li>
+                <li class="flex justify-between">
+                    € 250 voor blog module
+                    <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                    </svg>
+                </li>
+                <li class="flex justify-between">
+                    + € 15 / maand webruimte
+                    <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                    </svg>
+                </li>
+                <li class="flex justify-between">
+                    Email accounts tot 5GB
+                    <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                    </svg>
+                </li>
+                <li class="flex justify-between">
+                    24/7 ondersteuning
+                    <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                    </svg>
+                </li>
+                <li class="flex justify-between">
+                    Levenslange updates
+                    <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                    </svg>
+                </li>
+              </ul>
+              <div>
+                <span class="uppercase text-xl font-extrabold inline">€ 95</span>
+                <span class="text-sm text-slate-400 font-semibold inline-block">per maand</span>
+              </div>
+              <a href="/" class="bg-sky-500 rounded-full text-white uppercase font-bold px-5 py-2 mt-6 mr-6 inline-block">Start nu</a>
+        </div>
+        <!-- Start webshop -->
+        <div class="bg-white rounded-xl p-12">
+            <span class="uppercase text-xl font-bold">Webshop</span>
+            <ul role="list" class="space-y-1 text-sm/6 py-6">
+                <li class="flex justify-between">
+                    Design en ontwikkeling
+                    <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                    </svg>
+                </li>
+                <li class="flex justify-between">
+                    Zelf je webshop beheren
+                    <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                    </svg>
+                </li>
+                <li class="flex justify-between">
+                    € 250 voor blog module
+                    <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                    </svg>
+                </li>
+                <li class="flex justify-between">
+                    + € 15 / maand webruimte
+                    <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                    </svg>
+                </li>
+                <li class="flex justify-between">
+                    Email accounts tot 5GB
+                    <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                    </svg>
+                </li>
+                <li class="flex justify-between">
+                    24/7 ondersteuning
+                    <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                    </svg>
+                </li>
+                <li class="flex justify-between">
+                    Levenslange updates
+                    <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                    </svg>
+                </li>
+              </ul>
+              <span class="uppercase text-xl font-extrabold block">Vanaf € 4000</span>
+              <span class="text-sm text-slate-500 font-semibold block">+ € 40 / maand webruimte</span>
+              <a href="/" class="bg-sky-950 rounded-full text-white uppercase font-bold px-5 py-2 mt-6 mr-6 inline-block">Start nu</a>
+        </div>
+    </div>
+</section>
+<!-- Einde prijzen -->
+
+<!-- Referenties -->
+<section class="my-24 px-4">
+    <div class="mx-auto max-w-screen-xl logos group relative overflow-hidden whitespace-nowrap [mask-image:_linear-gradient(to_right,_transparent_0,_white_128px,white_calc(100%-128px),_transparent_100%)]">
+        <div class="animate-slide-left-infinite group-hover:animation-pause inline-block w-max">
+          <img class="mx-4 inline h-12" src={headzLogo.src} alt="Transistor" />
+          <img class="mx-4 inline h-12" src={pregoLogo.src} alt="Transistor" />
+          <img class="mx-4 inline h-12" src={lividumLogo.src} alt="Transistor" />
+          <img class="mx-4 inline h-12" src={powerzoneLogo.src} alt="Transistor" />
+          <img class="mx-4 inline h-12" src={picobelloLogo.src} alt="Transistor" />
+          <img class="mx-4 inline h-12" src={kfctongerloLogo.src} alt="Transistor" />
+          <img class="mx-4 inline h-12" src={kuisploegLogo.src} alt="Transistor" />
+          <img class="mx-4 inline h-12" src={deboLogo.src} alt="Transistor" />
+          <img class="mx-4 inline h-12" src={lavieenyoLogo.src} alt="Transistor" />
+        </div>
+    
+        <!-- Duplicaat voor oneindig effect -->
+        <div class="animate-slide-left-infinite group-hover:animation-pause inline-block w-max">
+          <img class="mx-4 inline h-12" src={headzLogo.src} alt="Transistor" />
+          <img class="mx-4 inline h-12" src={pregoLogo.src} alt="Transistor" />
+          <img class="mx-4 inline h-12" src={lividumLogo.src} alt="Transistor" />
+          <img class="mx-4 inline h-12" src={powerzoneLogo.src} alt="Transistor" />
+          <img class="mx-4 inline h-12" src={picobelloLogo.src} alt="Transistor" />
+          <img class="mx-4 inline h-12" src={kfctongerloLogo.src} alt="Transistor" />
+          <img class="mx-4 inline h-12" src={kuisploegLogo.src} alt="Transistor" />
+          <img class="mx-4 inline h-12" src={deboLogo.src} alt="Transistor" />
+          <img class="mx-4 inline h-12" src={lavieenyoLogo.src} alt="Transistor" />
+        </div>
+      </div>
+</section>
+<!-- Einde referenties -->
 
 </MainLayout>
