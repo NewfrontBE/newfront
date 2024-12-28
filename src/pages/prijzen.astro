@@ -1,0 +1,58 @@
+---
+import MainLayout from "../layouts/mainLayout.astro";
+import Prijstabel from "../components/Prijstabel.astro";
+import PreFooterCTA from "../components/PreFooterCTA.astro";
+import pagesBG from "../images/pages-hero-bg.jpg";
+
+import { Breadcrumbs } from "astro-breadcrumbs";
+import "astro-breadcrumbs/breadcrumbs.css";
+const customLinks = [
+    {
+        "data-link": "home",
+        "aria-label": "Ga naar de homepagina",
+        text: "Home",
+    },
+    {
+        "data-link": "prijzen",
+        "aria-label": "Ga naar de prijzen pagina",
+        text: "Prijzen",
+    },
+];
+---
+<MainLayout title="Prijzen voor een nieuwe website - NewFront">
+    <!-- Hero sectie -->
+<section style={`background-image: url('${pagesBG.src}')`} class="bg-no-repeat bg-cover bg-top content-end -mt-32 px-4 font-bold">
+    <div class="flex flex-col md:flex-row mx-auto max-w-screen-xl gap-8 pt-44">
+        <div class="w-full sm:w-2/3 md:w-1/2 mt-6 mx-auto md:m-0 pb-20">
+            <span class="block mb-8">
+                <Breadcrumbs customizeLinks={customLinks} separatorAriaHidden={false}>
+                    <svg
+                    slot="separator"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    ><polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+              </Breadcrumbs>
+            </span>
+
+            <h1 class="uppercase font-black text-4xl text-center md:text-left">Prijzen</h1>
+            <p class="text-center md:text-left">Betaalbare prijzen zonder wurgcontracten.</p>
+        </div>
+    </div>
+    <div class="bg-gradient-to-b from-transparent to-white min-h-10"></div>
+</section>
+<!-- Einde hero sectie -->
+    <Prijstabel/>
+
+    <div class="mt-12">
+        <PreFooterCTA/>
+    </div>
+    
+</MainLayout>
