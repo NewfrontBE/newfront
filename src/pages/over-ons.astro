@@ -1,5 +1,6 @@
 ---
 import MainLayout from "../layouts/mainLayout.astro";
+import PreFooterCTA from "../components/PreFooterCTA.astro"
 import pagesBG from "../images/pages-hero-bg.jpg";
 import nickIntroImg from "../images/nick-newfront-overons.jpg";
 
@@ -59,7 +60,7 @@ const customLinks = [
             <h2 class="uppercase text-3xl font-bold block mb-4">Website en webshop ontwikkeling sinds 2015</h2>
             <p class="mb-4">Ik ben Nick, oprichter van NewFront. Sinds mijn 16de richtte ik communities op voor grafische vormgevers en webdesigners door middel van online forums. De interesse in het vakgebied zat er al van jonge leeftijd in en heb ik sindsdien niet meer losgelaten.</p>
             <p class="mb-4">Wat ik begrijp van lokale ondernemers is dat een website vaak een hoge investering vraagt, budgetten die beter aan andere zaken gespendeert worden.</p>
-            <p class="mb-2">Daarbuiten zie ik ook grote agencies die vooral sterke verkopers zijn, ze "forceren" jonge ondernemers in langdurige contracten (langer dan 3 jaar is geen uitzondering) waarbij de balans van prijs en kwaliteit compleet zoek is. Het is niet makkelijk om betrouwbare online partners te vinden, hoe weet je op voorhand dat je nieuwe digitale samenwerking niet voor onaangename verrassingen zal zorgen? Voor de ondernemers die hierdoor gefrustreerd raken wou ik een oplossing vinden; geen langdurige wurgcontracten, geen hoge investeringen en een partnership gebaseerd op wederzijds vertrouwen en respect.</p>
+            <p class="mb-2">Daarbuiten zie ik ook grote agencies die vooral sterke verkopers zijn, ze "forceren" jonge ondernemers in langdurige contracten (langer dan 3 jaar is geen uitzondering) waarbij de balans van prijs en kwaliteit compleet zoek is. Het is niet makkelijk om betrouwbare online partners te vinden, hoe weet je op voorhand dat je nieuwe digitale samenwerking niet voor onaangename verrassingen zal zorgen? Voor de ondernemers die hierdoor gefrustreerd raken wou ik een oplossing vinden; <strong>geen langdurige wurgcontracten, geen extreme budgetten en een samenwerking gebaseerd op wederzijds vertrouwen en respect</strong>.</p>
         </div>
     </div>
 </section>
@@ -67,37 +68,35 @@ const customLinks = [
 
 <!-- Het proces -->
 <section class="my-24 py-20 bg-sky-950 text-white">
-    <div class="grid grid-cols-6 justify-items-stretch mx-auto max-w-screen-xl gap-12">
-        <div class="col-span-3 md:col-span-3">
+    <div class="flex mx-auto max-w-screen-xl gap-12 mb-20">
+        <div class="basis-1/2">
             <span class="uppercase text-sky-400 block font-medium">Wat is het proces?</span>
             <span class="uppercase text-white font-bold text-3xl block mb-4">Wij zorgen voor alles</span>
         </div>
-        <div class="col-span-3 md:col-span-3">
+        <div class="basis-1/2">
             <p class="text-sm">Als er een match is sturen we een klein formulier waarbij we meer over je zaak te weten komen, daarna zetten we dit om in geschreven tekst voor de website, we maken er een design voor, laten jou alles goedkeuren en daarna starten we met de ontwikkeling. Reken ongeveer 3-4 weken van het begin tot het einde.</p>
         </div>
-        <div class="col-span-2">
-            <div class="bg-sky-100 text-sky-950 font-medium rounded-md p-10">
+    </div>
+    <div class="grid grid-cols-6 mx-auto max-w-screen-xl gap-12">
+            <div class="col-span-2 bg-sky-100 text-sky-950 font-medium rounded-md p-10">
                 <span class="uppercase text-sky-500 block font-semibold mb-6">Stap 1</span>
                 <h3 class="uppercase font-bold">Voorbereiding</h3>
                 <p>We sturen je een email met minder dan 10 vragen over je zaak, je diensten en waarom klanten voor jou moeten kiezen. Wij doen de rest.</p>
             </div>
-        </div>
-        <div class="col-span-2">
-            <div class="bg-sky-100 text-sky-950 font-medium rounded-md p-10">
+            <div class="col-span-2 bg-sky-100 text-sky-950 font-medium rounded-md p-10">
                 <span class="uppercase text-sky-500 block font-semibold mb-6">Stap 2</span>
                 <h3 class="uppercase font-bold">Preview</h3>
                 <p>We plannen een videocall in en stellen het design voor, daarna maken we nog enkele aanpassingen tot je helemaal tevreden bent.</p>
             </div>
-        </div>
-        <div class="col-span-2">
-            <div class="bg-sky-100 text-sky-950 font-medium rounded-md p-10">
+            <div class="col-span-2 bg-sky-100 text-sky-950 font-medium rounded-md p-10">
                 <span class="uppercase text-sky-500 block font-semibold mb-6">Stap 3</span>
                 <h3 class="uppercase font-bold">Ontwikkeling</h3>
                 <p>Zodra het design is goedgekeurd, starten we met het ontwikkelen van de website en zetten we alles klaar. Voor lancering sturen we je een link zodat je alles nog kan nakijken.</p>
             </div>
-        </div>
     </div>
 </section>
 <!-- Einde proces -->
+
+<PreFooterCTA>
 
 </MainLayout>
