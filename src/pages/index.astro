@@ -1,7 +1,9 @@
 ---
+import { Image, getImage } from 'astro:assets';
 import MainLayout from "../layouts/mainLayout.astro";
 import Prijstabel from "../components/Prijstabel.astro";
 import homeHeroBackground from "../images/home-header-bg-2.jpg";
+const optimizedhomeHeroBackground = await getImage({ src: homeHeroBackground })
 import uspBackground from "../images/usp-achtergrond.svg";
 import referentieHeroHome from "../images/referentie-hero-home.png";
 import nickNewfront from "../images/nick-newfront.jpg";
@@ -20,7 +22,7 @@ import lavieenyoLogo from "../images/referrals/lavieenyo-logo.svg";
 ---
 <MainLayout title="Betaalbare websites met flexibele contracten - NewFront">
 <!-- Hero sectie -->
-<section style={`background-image: url('${homeHeroBackground.src}')`} class="bg-no-repeat bg-cover bg-top content-end -mt-32 px-4">
+<section style={`background-image: url('${optimizedhomeHeroBackground.src}')`} class="bg-no-repeat bg-cover bg-top content-end -mt-32 px-4">
     <div class="flex flex-col md:flex-row mx-auto max-w-screen-xl gap-8 pt-44">
         <div class="w-full sm:w-2/3 md:w-1/2 mt-6 mx-auto md:m-0">
             <span class="uppercase text-sky-400 font-bold text-center md:text-left block">Voor starters en kmo's</span>
@@ -32,7 +34,7 @@ import lavieenyoLogo from "../images/referrals/lavieenyo-logo.svg";
             </div>
         </div>
         <div class="w-full sm:w-2/3 md:w-1/2 mx-auto md:m-0">
-            <img src={referentieHeroHome.src} alt="">
+            <Image src={referentieHeroHome} alt="" loading="eager" />
         </div>
     </div>
     <div class="bg-gradient-to-b from-transparent to-white min-h-80"></div>
@@ -83,7 +85,7 @@ import lavieenyoLogo from "../images/referrals/lavieenyo-logo.svg";
 <!-- Aanbod -->
 <section class="my-12 px-4">
     <div class="grid grid-cols-5 justify-items-stretch mx-auto max-w-screen-lg gap-12">
-        <div class="col-span-5 md:col-span-2"><img src={nickNewfront.src} alt="" class="rounded-lg"></div>
+        <div class="col-span-5 md:col-span-2"><Image src={nickNewfront} alt="" class="rounded-lg" /></div>
         <div class="col-span-5 md:col-span-3">
             <span class="uppercase text-sky-400 font-bold block">Wat bieden we aan</span>
             <h2 class="uppercase font-black text-3xl block">Websites zonder opstartkosten vanaf €95 per maand</h2>
