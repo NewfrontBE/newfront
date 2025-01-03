@@ -21,8 +21,8 @@ const customLinks = [
 ---
 <MainLayout title="Prijzen voor een nieuwe website - NewFront">
     <!-- Hero sectie -->
-<section style={`background-image: url('${pagesBG.src}')`} class="bg-no-repeat bg-cover bg-top content-end -mt-32 px-4 font-bold">
-    <div class="flex flex-col md:flex-row mx-auto max-w-screen-xl gap-8 pt-44">
+<section style={`background-image: url('${pagesBG.src}')`} class="bg-no-repeat bg-cover bg-top content-end -mt-32 font-bold">
+    <div class="flex flex-col md:flex-row mx-auto max-w-screen-xl gap-8 pt-44 px-4">
         <div class="w-full sm:w-2/3 md:w-1/2 mt-6 mx-auto md:m-0 pb-20">
             <span class="block mb-8">
                 <Breadcrumbs customizeLinks={customLinks} separatorAriaHidden={false}>
@@ -49,10 +49,18 @@ const customLinks = [
     <div class="bg-gradient-to-b from-transparent to-white min-h-10"></div>
 </section>
 <!-- Einde hero sectie -->
+<div class="mx-auto max-w-screen-xl">
+    <div class="mb-12 px-4">
+        <span class="uppercase text-sky-400 font-bold block">Website ontwikkeling prijzen</span>
+        <h2 class="uppercase font-black text-3xl block mb-4">Prijs opties voor elk budget</h2>
+    </div>
     <Prijstabel/>
 
     <div class="mt-12">
         <PreFooterCTA/>
     </div>
+</div>
+
+
     
 </MainLayout>

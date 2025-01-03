@@ -17,5 +17,8 @@
     "astro-breadcrumbs": "^3.3.1",
     "flowbite": "^2.5.2",
     "tailwindcss": "^3.4.15"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.9"
   }
 }
