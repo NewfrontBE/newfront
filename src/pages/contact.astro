@@ -20,7 +20,7 @@ const customLinks = [
 <!-- Hero sectie -->
 <section style={`background-image: url('${pagesBG.src}')`} class="bg-no-repeat bg-cover bg-top content-end -mt-32 font-bold">
     <div class="flex flex-col md:flex-row mx-auto max-w-screen-xl gap-8 pt-44 px-4">
-        <div class="w-full sm:w-2/3 md:w-1/2 mt-6 mx-auto md:m-0 pb-20">
+        <div class="w-full md:w-1/2 mt-6 mx-auto md:m-0 pb-20">
             <span class="block mb-8">
                 <Breadcrumbs customizeLinks={customLinks} separatorAriaHidden={false}>
                     <svg
@@ -39,8 +39,8 @@ const customLinks = [
               </Breadcrumbs>
             </span>
 
-            <h1 class="uppercase font-black text-4xl text-center md:text-left">Contact</h1>
-            <p class="text-center md:text-left">Afspraak maken of wens je meer info?</p>
+            <h1 class="uppercase font-black text-4xl text-left">Contact</h1>
+            <p class="text-left">Afspraak maken of wens je meer info?</p>
         </div>
     </div>
     <div class="bg-gradient-to-b from-transparent to-white min-h-10"></div>
@@ -52,10 +52,10 @@ const customLinks = [
     <div class="mx-auto max-w-screen-xl mb-6">
         <span class="uppercase text-sky-400 font-bold block">We zijn (bijna altijd) bereikbaar, ook in het weekend</span>
         <h2 class="uppercase font-black text-3xl block mb-4">Contacteer ons</h2>
-        <p class="w-1/2">Stuur ons een bericht via het contactformulier of via whatsapp en we nemen binnen de 24u terug contact met je op.</p>
+        <p class="w-full sm:w-1/2">Stuur ons een bericht via het contactformulier of via whatsapp en we nemen binnen de 24u terug contact met je op.</p>
     </div>
     <div class="grid grid-cols-2 gap-16">
-        <div>
+        <div class="col-span-2 sm:col-span-1">
             <form name="contact" method="POST" data-netlify="true">
                 <p>
                   <label  class="font-semibold">Naam: <input type="text" name="naam" autocomplete="given-name" class="font-normal block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6" placeholder="Naam" required/></label>
@@ -74,7 +74,7 @@ const customLinks = [
                 </p>
               </form>
         </div>
-        <div class="">
+        <div class="col-span-2 sm:col-span-1">
             <span class="font-bold block">Chat met ons</span>
             <p class="text-sm mb-2">We beantwoorden binnen de 24 uur maar zijn niet permanent bereikbaar. Gelieve dus eventjes geduld te hebben.</p>
             <ul class="font-bold">

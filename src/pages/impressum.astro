@@ -1,7 +1,5 @@
 ---
 import MainLayout from "../layouts/mainLayout.astro";
-import Prijstabel from "../components/Prijstabel.astro";
-import PreFooterCTA from "../components/PreFooterCTA.astro";
 import pagesBG from "../images/pages-hero-bg.jpg";
 
 import { Breadcrumbs } from "astro-breadcrumbs";
@@ -13,13 +11,13 @@ const customLinks = [
         text: "Home",
     },
     {
-        "data-link": "prijzen",
-        "aria-label": "Ga naar de prijzen pagina",
-        text: "Prijzen",
+        "data-link": "impressum",
+        "aria-label": "Ga naar de impressum pagina",
+        text: "Impressum",
     },
 ];
 ---
-<MainLayout title="Prijzen voor een nieuwe website - NewFront">
+<MainLayout title="Impressum - NewFront">
     <!-- Hero sectie -->
 <section style={`background-image: url('${pagesBG.src}')`} class="bg-no-repeat bg-cover bg-top content-end -mt-32 font-bold">
     <div class="flex flex-col md:flex-row mx-auto max-w-screen-xl gap-8 pt-44 px-4">
@@ -42,8 +40,7 @@ const customLinks = [
               </Breadcrumbs>
             </span>
 
-            <h1 class="uppercase font-black text-4xl text-left">Prijzen</h1>
-            <p class="text-left">Betaalbare prijzen zonder wurgcontracten.</p>
+            <h1 class="uppercase font-black text-4xl text-left">Impressum</h1>
         </div>
     </div>
     <div class="bg-gradient-to-b from-transparent to-white min-h-10"></div>
@@ -51,14 +48,15 @@ const customLinks = [
 <!-- Einde hero sectie -->
 <div class="mx-auto max-w-screen-xl">
     <div class="mb-12 px-4">
-        <span class="uppercase text-sky-400 font-bold block">Website ontwikkeling prijzen</span>
-        <h2 class="uppercase font-black text-3xl block mb-4">Prijs opties voor elk budget</h2>
+        <span class="font-bold block mb-2">Bedrijfsnaam: NewFront</span>
+        <span class="font-bold block mb-2">Fysiek adres: 2260 Westerlo, België</span>
+        <span class="font-bold block mb-2">Contact: nick@newfront.be - 0032496990130</span>
+        <span class="font-bold block mb-2">Registratienummer: 0630813962</span>
+        <span class="font-bold block mb-2">Wettelijke vertegenwoordiger: Nick Vermonden</span>
+        <span class="font-bold block mb-2">BTW-identificatienummer: BE0630813962</span>
     </div>
-    <Prijstabel/>
 
-    <div class="mt-12">
-        <PreFooterCTA/>
-    </div>
+
 </div>
 
 
